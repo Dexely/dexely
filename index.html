@@ -76,6 +76,13 @@ h2{font:400 clamp(34px,8vw,44px)/1.1 "Caprasimo",Georgia,serif;color:var(--name)
 .extras ul{list-style:none;padding:0}
 .extras li:first-child{border-top:0}
 
+.svc{margin-top:22px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;background:var(--a2);color:var(--on)}
+.svc h3{font:700 22px "DM Sans",sans-serif}
+.svc p{margin-top:4px;max-width:44ch;font-size:15px}
+.svc .sp{text-align:right}
+.svc .price{margin:0;color:var(--on)}
+.svc small{display:block;font-size:13px;opacity:.85}
+@media (max-width:520px){.svc .sp{text-align:left}}
 /* steps + rules */
 ol.steps{list-style:none;padding:0;display:grid;gap:14px;counter-reset:s}
 ol.steps li{counter-increment:s;display:flex;gap:16px;align-items:flex-start}
@@ -229,6 +236,16 @@ html.lock{overflow:hidden}
         <p data-i18n="t3_p">Весь персонаж целиком, цвет и тени, можно с простой сценой.</p>
       </div>
     </div>
+    <div class="rv card svc">
+      <div>
+        <h3 data-i18n="c_h">Колористика + лайнинг</h3>
+        <p data-i18n="c_p">Работаю по вашему скетчу в роли колориста и лайнера: обвожу линиями и раскрашиваю.</p>
+      </div>
+      <div class="sp">
+        <div class="price" data-i18n="c_price">400–800+ ₽</div>
+        <small data-i18n="c_note">Начальная цена, зависит от сложности скетча</small>
+      </div>
+    </div>
     <div class="rv card extras" style="margin-top:22px">
       <h3 data-i18n="ex_h">Дополнительно</h3>
       <ul>
@@ -297,6 +314,7 @@ html.lock{overflow:hidden}
     t1_h:"Headshot", p1:"$5", t1_p:"Head or face only, flat colors, simple background. Great for an avatar.",
     t2_h:"Half-body", p2:"$8", t2_p:"Character with a pose and clothing details, colors and shading, background of your choice.",
     t3_h:"Full body", p3:"$15", t3_p:"The whole character, colors and shading, a simple scene is possible.",
+    c_h:"Coloring + lineart", c_p:"I work from your sketch as a colorist and liner: I ink the lines and color it.", c_price:"$5–10+", c_note:"Starting price, depends on sketch complexity",
     ex_h:"Extras", ex1:"Second character", ex1v:"+70%", ex2:"Detailed background", ex2v:"+$4", ex3:"Rush order", ex3v:"+30%",
     how_h:"How to order",
     s1:"Message me on Telegram or Twitter: what to draw, who the character is, a few references.",
@@ -538,3 +556,4 @@ html.lock{overflow:hidden}
 </script>
 </body>
 </html>
+
